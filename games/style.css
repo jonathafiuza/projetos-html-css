@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+@font-face {
+    font-family:"game";
+    src:url(fonte/Gameplay.ttf) format('truetypefont');
+    font-weight: normal;
+}
+:root {
+    --cor00: #eae0f3;
+    --cor01: #C1A9D9;
+    --cor02: #C9A0F2;
+    --cor03: #8921A6;
+    --cor04: #BF3475;
+    --cor05: #0D0D0D;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor03);
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+header{
+    background-color: var(--cor05);
+    color: var(--cor00);
+    padding: 20px;
+    height: 50px;
+    box-shadow: 0px 20px 10px var(--cor05);
+}
+
+header > h1 {
+    text-align: center;
+    text-shadow: 0px 0px 10px var(--cor01);
+    font-family: "Zen Dots", sans-serif;
+    font-weight: normal;
+    
+}
+
+nav {
+    background-color: var(--cor05);
+    text-align: center;
+    
+}
+
+nav > a {
+    font-weight: bold;
+    color: var(--cor00);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px 1px;
+    margin-left: 5px;
+}
+
+nav > a:hover {
+    background-color: var(--cor03);
+    color: var(--cor00);
+    transition-duration: 0.2s;
+    padding: 10px;
+}
+
+main {
+    background-color: var(--cor01);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 50px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.466);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+main h2 {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: normal;
+    padding: 5px;
+    color: var(--cor05);
+}
+
+ul {
+    columns: 4;
+    list-style-type: none;
+    background-color: var(--cor05);
+    margin-bottom: 30px;
+    border-radius: 20px 2px;
+    width: 100%;
+}
+
+ul li { 
+    padding-left: 10px;
+}
+
+ul img:hover {
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.473);
+    transition-duration: 0.6s;
+    
+
+}
+
+ul p {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: var(--cor00);
+    font-size: 90%;
+    
+    
+}
+
+main img {
+    width: 80%;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+
+aside {
+    background-color: var(--cor00);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: justify;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.377);
+    
+}
+
+aside > h2.periferico {
+    background-color: var(--cor03);
+    
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: var(--cor00);
+    
+}
+
+aside > h3 {
+    padding: 10px;
+    font-weight: normal;
+}
+
+aside > p {
+    padding-top: 10px;
+}
+
+aside > p.horas {
+    font-weight: lighter;
+    background-color: var(--cor01);
+    width: 110px;
+    padding: 10px;
+    border-radius: 0px 10px;
+}
+
+footer{
+    padding: 5px;
+    background-color: var(--cor05);
+    color: var(--cor00);
+    text-align: center;
+}
+
+footer a{
+    color: var(--cor00);
+}
+
